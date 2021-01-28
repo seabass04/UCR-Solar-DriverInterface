@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>gauge2.qml</file>
+        <file>velocityGauge.qml</file>
+    </qresource>
+</RCC>
