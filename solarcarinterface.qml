@@ -25,11 +25,6 @@ Item {
         y: 470
 
     }
-
-    Warning_lights{
-
-    }
-
 }
 
 /*##^##
