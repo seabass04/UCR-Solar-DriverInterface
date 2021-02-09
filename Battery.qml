@@ -22,10 +22,10 @@ Item {
 
     Image {
         id: battery_warning
-        x: 304
-        y: 164
-        width: 50
-        height: 50
+        x: 285
+        y: 289
+        width: 40
+        height: 40
         source: "assets/battery_warning.png"
     }
 
@@ -34,8 +34,8 @@ Item {
 
         Image {
             id: battery_level
-            x: 137
-            y: 230
+            x: 110
+            y: 294
             width: 85
             height: 50
             source: "assets/battery_level.png"
@@ -43,15 +43,15 @@ Item {
 
         Image {
             id: battery_image
-            x: 131
-            y: 205
+            x: 103
+            y: 269
             source: "assets/battery_2.png"
         }
 
         Text {
             id: battery_number
-            x: 247
-            y: 245
+            x: 209
+            y: 309
             font.pixelSize: 16
             text: "100"
             color: "#ffffff"
@@ -61,8 +61,8 @@ Item {
 
         Text {
             id: battery_percent
-            x: 284
-            y: 245
+            x: 246
+            y: 309
             font.pixelSize: 16
             text: "%"
             color: "#ffffff"
@@ -169,6 +169,18 @@ Item {
             }
         }
     }
+
+    Item {
+        id: battery_warning_list
+        Image {
+            id: battery_warning_background
+            x: 49
+            y: 170
+            width: 300
+            height: 100
+            source: "assets/rectangle.png"
+        }
+    }
 }
 
 
@@ -176,6 +188,6 @@ Item {
 
 /*##^##
 Designer {
-    D{i:0;formeditorZoom:3}D{i:8}
+    D{i:0;formeditorZoom:0.9}D{i:8}
 }
 ##^##*/
