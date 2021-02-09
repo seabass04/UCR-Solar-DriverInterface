@@ -67,6 +67,9 @@ Item {
         height: 600
         anchors.fill: parent
 
+        minimumValue: 0
+        maximumValue: 160
+
         style: CircularGaugeStyle {
             tickmarkLabel:  Text {
                 font.pixelSize: Math.max(6, outerRadius * 0.1)
@@ -79,19 +82,22 @@ Item {
 
             tickmark: Rectangle {
                 visible: styleData.value < 80 || styleData.value % 10 == 0
-                implicitWidth: outerRadius * 0.03
+                implicitWidth: outerRadius * 0.02
                 antialiasing: true
-                implicitHeight: outerRadius * 0.08
+                implicitHeight: outerRadius * 0.06
                 color: "#ffffff"
             }
 
             minorTickmark: Rectangle {
                 visible: styleData.value
-                implicitWidth: outerRadius * 0.01
+                implicitWidth: outerRadius * 0.008
                 antialiasing: true
-                implicitHeight: outerRadius * 0.04
+                implicitHeight: outerRadius * 0.03
                 color: "#ffffff"
             }
+
+            labelStepSize: 20
+
         }
 
         value: accelerating ? maximumValue : 0

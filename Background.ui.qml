@@ -57,14 +57,14 @@ Rectangle {
     color: "black"
 
     Image {
-        id: backgrounds_195_610Asset
+        id: background
         x: 0
         y: 0
         source: "assets/dashboard_background.png"
     }
 
     Image {
-        id: builtwithlogo_195_934
+        id: logo
         x: 1730
         y: 50
         width: 130

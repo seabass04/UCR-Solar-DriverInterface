@@ -1,9 +1,10 @@
 import QtQuick 2.8
 import QtQuick.Layouts 1.0
 import QtQuick.Studio.Components 1.0
+import QtQuick.Extras 1.4
 
 Item {
-    id: iso_195_156
+    id: warning_lights
     width: 1000
     height: 100
 
@@ -14,6 +15,7 @@ Item {
         height: 100
         width: 1000
         source: "assets/dashboard_background.png"
+
     }
 
     RowLayout {
@@ -57,9 +59,9 @@ Item {
     }
 
     IsoItem {
-        id: isoIcon3
-        source: "./iso-icons/iso_grs_7000_4_1702.dat"
-        property bool active: true
+        id: isoIcon
+        x: 71
+        y: -163
     }
 
 }
